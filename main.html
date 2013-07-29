@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Test page</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="mysite.css">
+	<script type="text/javascript" src="../test_Murashchenko/script.js"></script> 
+</head>
+<body>
+<div id = "form">
+	Введите номер:
+	<input id = "numberPlace" type="text" maxlength="18" onkeyup = "validateNumber(this,event)" value = "+7">
+	<br>Оператор:
+	<div id = "operator"></div>
+	<div id = "check"></div>
+	<table onmousedown="return false" onselectstart="return false">
+		<tr>
+     		<td id = "key1" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">1</td>
+     		<td id = "key2" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">2</td>
+     		<td id = "key3" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">3</td>
+    	</tr>
+    	<tr>
+     		<td id = "key4" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">4</td>
+     		<td id = "key5" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">5</td>
+     		<td id = "key6" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">6</td>
+    	</tr>
+    	<tr>
+     		<td id = "key7" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">7</td>
+     		<td id = "key8" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">8</td>
+     		<td id = "key9" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">9</td>
+    	</tr>
+    	<tr>
+     	<td></td>
+     	<td id = "key0" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="keyNum(this.innerHTML)">0</td>
+     	<td id = "keyDel" onmousedown = "mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="delNum()">&#8592;</td> <!--&#8592; - код стрелки-->
+    	</tr>
+	</table>
+</div>
+</body>
+</html>

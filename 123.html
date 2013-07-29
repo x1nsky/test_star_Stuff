@@ -1,0 +1,17 @@
+<input type="text" id = "text1" onkeyup="fn()">  
+
+ <script type="text/javascript">  
+
+
+ function fn() {  
+ 	var input = document.getElementById("text1");
+ 	//input.focus();
+ 	//alert(typeof input);
+    var range = input.createTextRange();  
+    range.setEndPoint("EndToStart", document.selection.createRange());  
+    //alert(range.text.length);  
+
+ }
+
+ </script> 
+
